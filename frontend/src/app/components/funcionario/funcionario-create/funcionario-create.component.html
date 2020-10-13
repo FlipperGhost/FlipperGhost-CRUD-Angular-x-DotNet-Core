@@ -1,0 +1,24 @@
+<mat-card>
+        <mat-card-title>Cadastro</mat-card-title>
+        <form>
+            <mat-form-field>
+                <input type="text" matInput placeholder="Nome" [(ngModel)]= "funcionario.nome" name="nome" required>
+            </mat-form-field>
+            <mat-form-field>
+                <input type ="text" matInput placeholder="rg" [(ngModel)]= "funcionario.rg" name="rg">
+            </mat-form-field>
+            <mat-form-field>
+                <Select type="text" matInput placeholder="departamento" [(ngModel)]= "funcionario.idDepartamento" name="departamento"required>
+                <option value="{departamento.id}">{{departamento.nome}}</option>
+                 </Select>
+                </mat-form-field>
+        </form>
+       <button mat-raised-button (click)="createFuncionario" color="primary">
+   Cadastrar
+ </button>
+<button mat-raised-button (click)="cancel()">
+    Cancelar
+ </button>
+    
+</mat-card>
+

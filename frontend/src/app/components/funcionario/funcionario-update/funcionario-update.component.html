@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-card-title>Editar Cadastro</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input type="hidden" matInput placeholder="id" [(ngModel)]= "funcionario.id" name="id" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input type ="number" matInput placeholder="nome" [(ngModel)]= "funcionario.nome" name="nome ">
+        </mat-form-field>
+        <mat-form-field>
+            <input type="text" matInput placeholder="Photo" [(ngModel)]= "funcionario.photo" name="photo">
+        </mat-form-field>
+        </mat-form-field>
+        <mat-form-field>
+            <input type="text" matInput placeholder="Departamento" [(ngModel)]= "funcionario.idDepartamento" name="idDepartamento" required>
+        </mat-form-field>
+    </form>
+   <button mat-raised-button (click)="updateFuncionario()" color="primary">
+Salvar
+</button>
+<button mat-raised-button (click)="cancel()">
+Cancelar
+</button>
+
+</mat-card>
