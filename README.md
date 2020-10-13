@@ -1,7 +1,7 @@
 # Frontend com Angular 9 - Utilizar com VsCode
 
 ##  Backend
-* Json-Server
+* DotNet - Core
 
 ##  Frontend
 
@@ -15,13 +15,13 @@
 ### É necessário:
 * Usar o commando  npm start -> (executa o script start dentro do package.json) dentro do diretório Backend para inicializar o json-server;
 * Abrir nova aba do terminal, navegar até o diretório frontend e executar o comando ng serve dentro do diretorio frontend.
+* Ter o dotnet core instalado
+* Para executar, dentro do diretorio do projeto backend executar o comando "dotnet run"
+
 
 ## Rotas
 ### Endpoints
 
-###### http://localhost:4200/
-###### http://localhost:4200/home
-###### http://localhost:4200/usuario
-
 ### Backend db.json
-##### http://localhost:3001/produtos
+##### http://localhost:5001/funcionarios
+##### http://localhost:5001/departamentos
